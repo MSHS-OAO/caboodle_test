@@ -15,8 +15,8 @@ con <- dbConnect(odbc(), Driver = "SQLServer",
                  Trusted_Connection = "NTLMv2",
                  Integrated_Security = TRUE,
                  uid = "MSSMCAMPUS\villea04",
-                 pwd = "Ingermanycovid2024",
-                 Server_SPN = "MSSMCAMPUS"
+                 pwd = "Ingermanycovid2024"#,
+                 #Server_SPN = "MSSMCAMPUS"
 )
 
 print(con)
