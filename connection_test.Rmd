@@ -1,0 +1,26 @@
+---
+title: "Microsoft SQl Server Test"
+output: html_document
+---
+
+```{r setup}
+library(DBI)
+library(odbc)
+
+con <- dbConnect(odbc(), Driver = "SQLServer",
+                 Server = "SEPIBOJP016001",
+                 Port = 1433,
+                 #Database = "qidm_dev.dbo",
+                 Trusted_Connection = "True"
+)
+
+print(con)
+
+
+
+
+
+
+
+```
+
