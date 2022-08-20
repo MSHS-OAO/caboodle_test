@@ -12,11 +12,11 @@ con <- dbConnect(odbc(), Driver = "SQLServer",
                  Port = 1433,
                  #Database = "qidm_dev.dbo",
                  # Authentication = "ActiveDirectoryIntegrated"
-                 Trusted_Connection = "NTLMv2",
+                 Trusted_Connection = NTLM,
                  Integrated_Security = TRUE,
                  uid = "villea04",
-                 pwd = "Ingermanycovid2024"
-                 #Server_SPN = "MSSMCAMPUS/villea04"
+                 pwd = "Ingermanycovid2024",
+                 Server_SPN = "MSSMCAMPUS"
 )
 
 print(con)
