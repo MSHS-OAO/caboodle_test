@@ -7,13 +7,13 @@ output: html_document
 library(DBI)
 library(odbc)
 
-con <- dbConnect(odbc(), Driver = "SQLServer",
+con <- dbConnect(odbc(), Driver = "SQL Server",
                  Server = "SEPIBOJP016001",
                  Port = 1433,
                  #Database = "qidm_dev.dbo",
                  # Authentication = "ActiveDirectoryIntegrated"
-                 Trusted_Connection = "NTLM",
-                 Integrated_Security = TRUE,
+                 Trusted_Connection = "NTLMv2",
+                 #Integrated_Security = TRUE,
                  uid = "MSSMCAMPUS\villea04",
                  pwd = "Ingermanycovid2024"
                  #Server_SPN = "MSSMCAMPUS/villea04"
