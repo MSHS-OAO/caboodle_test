@@ -7,7 +7,7 @@ output: html_document
 library(DBI)
 library(odbc)
 
-con <- dbConnect(odbc(), Driver = "SQL Server",
+con <- dbConnect(odbc(), Driver = "SQLServer",
                  Server = "SEPIBOJP016001",
                  Port = 1433,
                  #Database = "qidm_dev.dbo",
