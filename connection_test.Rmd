@@ -12,7 +12,8 @@ con <- dbConnect(odbc(), Driver = "SQLServer",
                  Port = 1433,
                  #Database = "qidm_dev.dbo",
                  Trusted_Connection = TRUE,
-                 Integrated_Security = TRUE
+                 Integrated_Security = TRUE,
+                 Server_SPN = "MSSMCAMPUS/villea04"
 )
 
 print(con)
