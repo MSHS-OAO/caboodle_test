@@ -7,14 +7,15 @@ output: html_document
 library(DBI)
 library(odbc)
 
-Sys.sleep(15)
 con <- dbConnect(odbc(), Driver = "SQLServer",
                  Server = "SEPIBOJP016001",
                  Port = 1433,
                  #Database = "qidm_dev.dbo",
                  Trusted_Connection = TRUE,
-                 Integrated_Security = TRUE,
-                 Server_SPN = "MSSMCAMPUS/villea04"
+                 #Integrated_Security = TRUE,
+                 uid = "MSSMCAMPUS\villea04",
+                 pwd = "Ingermanycovid2024"
+                 #Server_SPN = "MSSMCAMPUS/villea04"
 )
 
 print(con)
