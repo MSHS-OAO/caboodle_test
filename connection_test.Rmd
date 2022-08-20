@@ -7,6 +7,7 @@ output: html_document
 library(DBI)
 library(odbc)
 
+Sys.sleep(15)
 con <- dbConnect(odbc(), Driver = "SQLServer",
                  Server = "SEPIBOJP016001",
                  Port = 1433,
