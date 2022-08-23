@@ -27,9 +27,11 @@ con <- dbConnect(odbc(),
                  PWD = "Pasword01#PasPasword01#Pas",
                  Port = 1433)
 
-print(con)
+# print(con)
 
 referrals_raw <- sqlQuery(con, "SELECT TOP 10 * FROM PRDREPORT.FullAccess.Referrals") 
+
+print(referrals_raw)
 
 
 
