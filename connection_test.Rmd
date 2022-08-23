@@ -7,17 +7,25 @@ output: html_document
 library(DBI)
 library(odbc)
 
-con <- dbConnect(odbc(), Driver = "SQLServer",
+# con <- dbConnect(odbc(), Driver = "SQLServer",
+#                  Server = "SEPIBOJP016001",
+#                  Port = 1433,
+#                  #Database = "qidm_dev.dbo",
+#                  # Authentication = "ActiveDirectoryIntegrated"
+#                  Trusted_Connection = TRUE,
+#                  Integrated_Security = TRUE#,
+#                  #uid = "MSSMCAMPUS\villea04",
+#                  #pwd = "Ingermanycovid2024"#,
+#                  #Server_SPN = "MSSMCAMPUS"
+# )
+
+con <- dbConnect(odbc(),
+                 Driver = "SQLServer",
                  Server = "SEPIBOJP016001",
-                 Port = 1433,
-                 #Database = "qidm_dev.dbo",
-                 # Authentication = "ActiveDirectoryIntegrated"
-                 Trusted_Connection = TRUE,
-                 Integrated_Security = TRUE#,
-                 #uid = "MSSMCAMPUS\villea04",
-                 #pwd = "Ingermanycovid2024"#,
-                 #Server_SPN = "MSSMCAMPUS"
-)
+                 Database = "PRDREPORT.FullAccess.Referrals",
+                 UID = "kweons01",
+                 PWD = rstudioapi::askForPassword("Database password"),
+                 Port = 1433)
 
 print(con)
 
