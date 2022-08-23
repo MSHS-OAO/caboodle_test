@@ -24,7 +24,7 @@ con <- dbConnect(odbc(),
                  Server = "SEPIBOJP016001",
                  Database = "PRDREPORT.FullAccess.Referrals",
                  UID = "kweons01",
-                 PWD = rstudioapi::askForPassword("Database password"),
+                 PWD = "Pasword01#PasPasword01#Pas",
                  Port = 1433)
 
 print(con)
