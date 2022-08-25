@@ -27,13 +27,13 @@ library(odbc)
 #                  PWD = "Pasword01#PasPasword01#Pas",
 #                  Port = 1433)
 
-con <- dbConnect(odbc(), "Caboodle")
+con <- dbConnect(odbc(), "HandHygiene")
 
-# print(con)
+ print(con)
 
-referrals_raw <- dbGetQuery(con, "SELECT TOP 10 * FROM PRDREPORT.FullAccess.Referrals") 
+#referrals_raw <- dbGetQuery(con, "SELECT TOP 10 * FROM PRDREPORT.FullAccess.Referrals") 
 
-print(referrals_raw)
+#print(referrals_raw)
 
 
 
