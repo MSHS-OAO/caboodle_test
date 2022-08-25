@@ -19,15 +19,15 @@ library(odbc)
 #                  #Server_SPN = "MSSMCAMPUS"
 # )
 
-# con <- dbConnect(odbc(),
-#                  Driver = "SQL Server",
-#                  Server = "SEPIBOJP016001",
+ con <- dbConnect(odbc(),
+                  Driver = "SQLServer",
+                  Server = "SQOPSQLP015001",
 #                  #Database = "PRDREPORT.FullAccess.Referrals",
-#                  UID = "kweons01",
-#                  PWD = "Pasword01#PasPasword01#Pas",
-#                  Port = 1433)
+                  UID = "kweons01",
+                  PWD = "Pasword01#PasPasword01#Pas",
+                  Port = 1433)
 
-con <- dbConnect(odbc(), "HandHygiene")
+#con <- dbConnect(odbc(), "HandHygiene")
 
  print(con)
 
