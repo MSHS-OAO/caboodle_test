@@ -19,18 +19,28 @@ library(odbc)
 #                  #Server_SPN = "MSSMCAMPUS"
 # )
 
- con <- dbConnect(odbc(),
+  con_caboodle <- dbConnect(odbc(),
                   Driver = "SQLServer",
-                  #Server = "sqopsqlp015001",
+                  Server = "SEPIBOJP016001",
+                  UID = "kweons01",
+                  PWD = "Pasword01#PasPasword01#Pas",
+                  Port = 1433)  
+                  
+print(con_caboodle)
+print("Caboodle was succesful")
+
+ con_hh <- dbConnect(odbc(),
+                  Driver = "SQLServer",
                   Server = "SQOPSQLP015001",
-                  #Database = "PRDREPORT.FullAccess.Referrals",
                   UID = "kweons01",
                   PWD = "Pasword01#PasPasword01#Pas",
                   Port = 1433)
-
-#con <- dbConnect(odbc(), "HandHygiene")
-
- print(con)
+                  
+                  
+     
+ print(con_hh)
+ 
+ print("Hand hygiene was successful")
 
 #referrals_raw <- dbGetQuery(con, "SELECT TOP 10 * FROM PRDREPORT.FullAccess.Referrals") 
 
