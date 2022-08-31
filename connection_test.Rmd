@@ -7,18 +7,6 @@ output: html_document
 library(DBI)
 library(odbc)
 
-# con <- dbConnect(odbc(), Driver = "SQLServer",
-#                  Server = "SEPIBOJP016001",
-#                  Port = 1433,
-#                  #Database = "qidm_dev.dbo",
-#                  # Authentication = "ActiveDirectoryIntegrated"
-#                  Trusted_Connection = TRUE,
-#                  Integrated_Security = TRUE#,
-#                  #uid = "MSSMCAMPUS\villea04",
-#                  #pwd = "Ingermanycovid2024"#,
-#                  #Server_SPN = "MSSMCAMPUS"
-# )
-
   con_caboodle <- dbConnect(odbc(),
                   Driver = "SQLServer",
                   Server = "SEPIBOJP016001",
@@ -28,6 +16,9 @@ library(odbc)
                   
 print(con_caboodle)
 print("Caboodle was succesful")
+
+```
+```{r}
 
  con_hh <- dbConnect(odbc(),
                   Driver = "SQLServer",
@@ -41,16 +32,6 @@ print("Caboodle was succesful")
  print(con_hh)
  
  print("Hand hygiene was successful")
-
-#referrals_raw <- dbGetQuery(con, "SELECT TOP 10 * FROM PRDREPORT.FullAccess.Referrals") 
-
-#print(referrals_raw)
-
-
-
-
-
-
 
 ```
 
