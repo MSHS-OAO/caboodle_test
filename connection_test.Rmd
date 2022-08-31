@@ -7,24 +7,22 @@ output: html_document
 library(DBI)
 library(odbc)
 
-  con_caboodle <- dbConnect(odbc(),
-                  Driver = "SQLServer",
-                  Server = "SEPIBOJP016001",
-                  UID = "kweons01",
-                  PWD = "Pasword01#PasPasword01#Pas",
-                  Port = 1433)  
-                  
-print(con_caboodle)
-print("Caboodle was succesful")
-
+#  con_caboodle <- dbConnect(odbc(),
+ #                 Driver = "SQLServer",
+  #                Server = "SEPIBOJP016001",
+   #               UID = "kweons01",
+    #              PWD = "Pasword01#PasPasword01#Pas",
+     #             Port = 1433)              
+#print(con_caboodle)
+#print("Caboodle was succesful")
 ```
-#```{r}
- #con_hh <- dbConnect(odbc(),
-  #                Driver = "SQLServer",
-   #               Server = "SQOPSQLP015001",
-    #              UID = "kweons01",
-     #             PWD = "Pasword01#PasPasword01#Pas",
-      #            Port = 1433)     
+```{r}
+con_hh <- dbConnect(odbc(),
+                Driver = "SQLServer",
+               Server = "SQOPSQLP015001",
+              UID = "kweons01",
+             PWD = "Pasword01#PasPasword01#Pas",
+            Port = 1433)     
  print(con_hh)
  print("Hand hygiene was successful")
 ```
