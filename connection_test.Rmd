@@ -19,7 +19,7 @@ library(odbc)
 ```{r}
 con_hh <- dbConnect(odbc(),
                 Driver = "SQLServer",
-               Server = "SQOPSQLP015001",
+               Server = "10.2.42.69",
               UID = "kweons01",
              PWD = "Pasword01#PasPasword01#Pas",
             Port = 1433)     
