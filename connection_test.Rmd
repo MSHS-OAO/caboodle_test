@@ -27,6 +27,6 @@ con_hh <- dbConnect(odbc(),
  print("Hand hygiene was successful")
  
  test <- readRDS("/nfs/data/Applications/Ambulatory/Data_Updated/historical_data.rds")
- print(test
+ print(test)
 ```
 
