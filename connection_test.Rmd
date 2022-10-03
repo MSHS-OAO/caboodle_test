@@ -6,6 +6,7 @@ output: html_document
 ```{r setup}
 library(DBI)
 library(odbc)
+library(readxl)
 
 #  con_caboodle <- dbConnect(odbc(),
  #                 Driver = "SQLServer",
@@ -26,7 +27,7 @@ con_hh <- dbConnect(odbc(),
  print(con_hh)
  print("Hand hygiene was successful")
  
- test <- readRDS("/nfs/data/Applications/Ambulatory/Data_Updated/historical_data.rds")
+ test <- read_xlsx("/nfs/data/Applications/Ambulatory/master_amb_mapping.xlsx")
  print(test)
 ```
 
