@@ -28,7 +28,8 @@ con_hh <- dbConnect(odbc(),
             Port = 1433)     
  print(con_hh)
  print("Hand hygiene was successful")
- 
+ dbGetQuery(con_hh, "SELECT * FROM qidm_dev.dbo.amb_hand_hygiene_comp")
+  
  test <- read_xlsx("/nfs/data/Applications/Ambulatory/master_amb_mapping.xlsx")
  print(test)
 ```
