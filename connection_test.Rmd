@@ -7,8 +7,6 @@ output: html_document
 library(DBI)
 library(odbc)
 library(readxl)
-library(readxl)
-library(dplyr)
 
 #  con_caboodle <- dbConnect(odbc(),
  #                 Driver = "SQLServer",
