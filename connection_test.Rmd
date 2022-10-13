@@ -31,12 +31,3 @@ con_hh <- dbConnect(odbc(),
  test <- read_xlsx("/nfs/data/Applications/Ambulatory/master_amb_mapping.xlsx")
  print(test)
 ```
-```{r}
-scheduling_data_raw <- as.data.frame(readRDS("/nfs/data/Applications/Ambulatory/Data_Updated/historical_data.rds")) %>%
-  filter(!is.na(Campus)) %>%
-  filter(Campus %in% c("NETWORK","MSM","MSH-MSDFP","ONCOLOGY","MSW","MSBI","MSUS","MSH- AMBULATORY CARE","MSDD")) %>%
-  filter(Appt.Status == "Arrived") %>%
-  filter(Appt.DateYear >= as.Date("2022-01-01"), Appt.DateYear <= as.Date("2022-08-01")) 
- 
- print(sort(unique(scheduling_data_raw$Appt.DateYear)))
-```
