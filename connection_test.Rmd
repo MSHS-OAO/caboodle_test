@@ -9,8 +9,8 @@ library(odbc)
 library(readxl)
 library(pool)
 
-# poolcon <- dbConnect(odbc(), "Oracle 21_8")
+poolcon <- dbConnect(odbc(), "Oracle 21_8")
 
-poolcon <- dbConnect(odbc(), "OAO Cloud DB Oracle")
+#poolcon <- dbConnect(odbc(), "OAO Cloud DB Oracle")
 
 ```
