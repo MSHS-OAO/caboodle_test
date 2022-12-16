@@ -11,8 +11,6 @@ library(pool)
 
 # poolcon <- dbConnect(odbc(), "Oracle 21_8")
 
-poolcon <- dbConnect(odbc(), "Oracle 21_8",
-                      uid = "villea04",
-                      pwd = "qKQvPoSilm21T*qVr")
+poolcon <- dbConnect(odbc(), "Oracle 21_8")
 
 ```
