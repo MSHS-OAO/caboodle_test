@@ -13,6 +13,6 @@ library(pool)
 #                      uid = "villea04",
 #                      pwd = "qKQvPoSilm21T*qVr")
 
-poolcon <- dbConnect(odbc(), "OAO Cloud DB Oracle")
+poolcon <- dbConnect(odbc(), "Oracle 21_8_test")
 
 ```
