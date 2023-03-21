@@ -9,8 +9,6 @@ library(odbc)
 library(readxl)
 library(pool)
 
- conn <- dbConnect(odbc(), "OracleODBC-21_5",
-                      uid = "OAO_PRODUCTION",
-                      pwd = "TIGu*3$K22nqLjP")
+poolcon <- dbConnect(odbc(), "OAO Cloud DB")
 
 ```
