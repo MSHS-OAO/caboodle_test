@@ -9,6 +9,6 @@ library(odbc)
 library(readxl)
 library(pool)
 
-conn <- dbConnect(odbc(), "Clarity_prod", uid = "kweons01", pwd = "kweons01123$")
+conn <- dbConnect(odbc(), "Clarity_prod")
 
 ```
